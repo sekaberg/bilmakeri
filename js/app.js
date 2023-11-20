@@ -165,6 +165,6 @@ function update_prislabels() {
   }
 }
 
-window.alert("Nettsiden er under utvikling, feil og mangler kan oppstå")
+window.alert("Nettsiden er under utvikling, feil og mangler kan oppstå :)")
 
 //create_saleblock('images/biler/bilde3.png', 'Toyota Hiace', 'Selger Toyota Hiace 2030 model. I god stand, nye kanaler og eu godkjent til 2034', '47 250');
