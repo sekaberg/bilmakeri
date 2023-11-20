@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8" name="viewport" content="device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/x-icon" href="images/car-repair-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ådalen bruktbiler</title>
+</head>
+
+
+<body>
+    <center>
+        <div class="topp_nav" id="topp_nav">
+            <button class="active" id="hjem_button" type="button" onclick="hjem_btn()">Hjem</button>
+            <button id="kjop_button" type="button" onclick="kjop_btn()">Biler for salg</button>
+            <button id="bilder_button" type="button" onclick="bilder_btn()">Bilder</button>
+            <button id="kontakt_button" type="button" onclick="kontakt_btn()">Kontakt</button>
+            <button id="om_oss_button" type="button" onclick="om_oss_btn()">Om oss</button>
+
+            <a id="finn_btn" target="_blank">
+                <img src="images/finn.png" style="height: 38px;">
+            </a>
+            <a id="facebook_btn" target="_blank">
+                <img src="images/facebook.png" style="height: 38px;">
+            </a>
+        </div>
+        <div class="spacer" id="topp_nav_spacer"></div>
+    </center>
+
+    <div class="vis" id="hjem_blokk">
+        <center>
+            <h1 class="middels_tittel">Berglund bilmakeri</h1>
+
+            <div class="container">
+                <h2 class="under_tittel">Berglund bilmakeri</h2>
+                <p class="normal_tekst">
+                    Berglund bilmakeri er et enkeltpersonforetak som er drevet av Tommy Berglund.<br>
+                    Her i Berglund bilmakeri blir biler kjøpt, fikset og solgt regelmessig.
+                </p>
+            </div>
+        </center>
+    </div>
+
+
+    <div class="sjul" id="kjop_blokk">
+        <center>
+            <h1 class="middels_tittel">Biler for salg</h1>
+            <div class="container" id="salgblock_container">
+                <h2 class="under_tittel" id="bilsalg_label">Toyota Hiace</h2>
+                <!-- <button onclick="create_saleblock('images/biler/bilde3.png', 'Toyota Hiace', 'Selger Toyota Hiace 2030 model. I god stand, nye kanaler og eu godkjent til 2034', '47 250')">Add block</button>-->
+
+                <!-- Mal for bil til salg blokk
+                
+                <div class="salg_container">
+                    <img src="path/to/front/image">
+                    <div style="display: block;">
+                        <p class="under_tittel" style="align-self: normal; margin-top: 10px; padding-top: 0%;">
+                            Tittel / Navn på bil
+                        </p>
+                        <p class="normal_tekst" style="height: 120px;">
+                            Beskrivelse og informasjon om bilen
+                        </p>
+                        <p class="normal_tekst" id="pris" style="font-size: 180%; position: absolute; bottom: 0;"><b>pris</b></p>
+                    </div>
+                </div>
+                
+                -->
+            </div>
+        </center>
+    </div>
+
+
+    <div class="sjul" id="bilder_blokk">
+        <center>
+            <h1 class="middels_tittel">Bil bilder</h1>
+            <div class="row">
+                <div class="column">
+                    <img src="images/biler/bilde4.jpg">
+                    <img src="images/biler/bilde2.jpeg">
+                </div>
+                <div class="column">
+                    <img src="images/biler/bilde5.jpeg">
+                    <img src="images/biler/bilde6.jpeg">
+                    <img src="images/biler/bilde3.png">
+                </div>
+            </div>
+        </center>
+    </div>
+
+
+    <div class="sjul" id="kontakt_blokk">
+        <center>
+            <h1 class="middels_tittel">Har du et spørsmål?</h1>
+            <div class="container" style="padding: 20px;">
+                <p class="normal_tekst">Hvis du lurer på kjøp, salg eller har andre spørsmål, ta kontakt på en av følgende måter:</p>
+                <div style="align-items: center; justify-content: center; display: flex; flex-wrap: wrap; flex: 50%; padding: 20px;">
+                    <a id="facebook_btn" target="_blank">
+                        <img class="btn" src="images/facebook.png" style="width: 80px; height: 80px;">
+                        <p class="normal_tekst" id="facebook_label"></p>
+                    </a>
+                    <a id="email_btn">
+                        <img class="btn" src="images/mail.png" style="width: 80px; height: 80px;">
+                        <p class="normal_tekst" id="email_label"></p>
+                    </a>
+                    <a id="telefon_btn" target="_blank">
+                        <img class="btn" src="images/telephone.png" style="width: 80px; height: 80px;">
+                        <p class="normal_tekst" id="phone_label"></p>
+                    </a>
+                </div>
+            </div>
+        </center>
+    </div>
+
+
+    <div class="sjul" id="om_oss_blokk">
+        <center>
+            <h1 class="middels_tittel">Om oss</h1>
+            <div class="container">
+                <h2 class="under_tittel">
+                    Hva er Ådalen bruktbil?
+                </h2>
+
+                <p class="normal_tekst">
+                    Ådalen bruktbil kjøper og selger bruktbiler.<br><br>
+                    <b>Åpent søndag - fredag 10:00 - 16:00</b><br>
+                    <b>Sengt fra solnedgang fredag til solnedgang lørdag</b>
+                </p>
+
+            </div>
+        </center>
+    </div>
+
+
+    <!--
+    <center>
+        <div class="spacer" style="padding: 20px;"></div>
+        <div class="bunn_nav">
+            <p>
+                Plass til masse tekst her!
+            </p>
+        </div>
+    </center>
+    -->
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>

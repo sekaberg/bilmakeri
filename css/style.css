@@ -1,0 +1,304 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../images/biler/bilde1.jpeg);
+    background-color: rgb(120, 120, 120);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body div.sjul {
+    content-visibility: hidden;
+}
+
+body div.vis {
+    content-visibility: visible;
+}
+
+
+
+#topp_nav_spacer {
+    margin: 100px;
+}
+
+
+
+.stor_tittel {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 6px;
+    color: black;
+    font-size: 600%;
+
+    word-wrap: break-word;
+
+    offset: 100;
+    text-align: center;
+    align-self: center;
+    padding: 1%;
+
+    width: fit-content;
+
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.middels_tittel {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 6px;
+    color: black;
+    font-size: 400%;
+
+    word-wrap: break-word;
+
+    offset: 100;
+    text-align: center;
+    align-self: center;
+    padding: 1%;
+
+    width: fit-content;
+
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.under_tittel {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 6px;
+    color: black;
+    font-size: 200%;
+    
+    word-wrap: normal;
+
+    text-align: center;
+    align-self: center;
+    padding-top: 2%;
+}
+
+.normal_tekst {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    color: black;
+    font-size: 150%;
+
+    word-wrap: break-word;
+
+    text-align: center;
+}
+
+
+.btn {
+    transition: transform 250ms;
+    padding: 20px;
+}
+.btn:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.link_btn {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 140%;
+    vertical-align: middle;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.column {
+    flex: 50%;
+    max-width: 50%;
+}
+.column img {
+    transition: transform 500ms;
+    border: 4px solid black;
+    border-radius: 10px;
+    margin: 20px 16px;
+    vertical-align: top;
+    align-self: center;
+    object-fit: cover;
+    width: 95%;
+}
+.column img:hover {
+    -ms-transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
+}
+
+
+.salg_container {
+    transition: transform 500ms;
+    background-color: transparent;
+    display: flex;
+    padding: 30px 20px;
+    width: 70%;
+    height: fit-content;    
+}
+.salg_container p {
+    text-align: left;
+    padding-left: 40px;
+}
+.salg_container img {
+    transition: transform 250ms;
+    border: 4px solid black;
+    border-radius: 10px;
+
+    vertical-align: center;
+    align-self: center;
+    object-fit: cover;
+
+    width: 50%;
+    height: fit-content;
+}
+.salg_container:hover {
+    -ms-transform: scale(1.06);
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06);
+}
+
+
+.topp_nav {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    z-index: 10;
+
+    position: fixed;
+    width: 82%;
+    height: fit-content;
+    top: 2%;
+    left: 0;
+    right: 0;
+    margin: 1% auto;
+    display: flexbox;
+}
+.topp_nav a {
+    color: black;
+    padding: 18px;
+    border-radius: 10px;
+    margin: 0.5%;
+    
+    display: inline-block;
+    vertical-align: top;
+}
+.topp_nav img {
+    transition: transform 250ms;
+}
+.topp_nav img:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.topp_nav button {
+    transition: background-color 250ms;
+    cursor: pointer;
+    margin: 0.5%;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 200%;
+    width: 240px;
+    display: inline-block;
+}
+.topp_nav button:hover {
+    background-color: rgb(91, 151, 182);
+    color: black;
+}
+.topp_nav button.active {
+    background-color: rgb(13, 89, 133);
+    color: white;
+}
+
+
+.bunn_nav {
+    background-color: slategray;
+    border-radius: 10px;
+    overflow: hidden;
+    position: center;
+    margin-bottom: 0;
+    padding: 0.5%;
+    width: 98%;
+    height: 250px;
+}
+
+
+.spacer {
+    content-visibility: hidden;
+    align-self: center;
+    position: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.6);
+    background-repeat: no-repeat;
+    position: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+
+    border-radius: 10px;
+    width: 80%;
+    height: fit-content;
+    padding: 1%;
+}
+.container a {
+    margin: 0px 80px;
+}
+
+
+
+@media screen and (max-width: 1284px) {
+    .salg_container {
+        display: block;
+    }
+
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .column img {
+        width: 90%;
+    }
+
+
+    .topp_nav {
+        position: absolute;
+    }
+}
+@media screen and (max-width: 1892px) {
+    #topp_nav_spacer {
+        margin: 135px;
+    }
+}
+@media screen and (max-width: 915px) {
+    #topp_nav_spacer {
+        margin: 175px;
+    }
+}
+@media screen and (max-width: 602px) {
+    #topp_nav_spacer {
+        margin: 300px;
+    }
+}
